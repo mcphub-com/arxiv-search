@@ -2,13 +2,13 @@
 
 The **arXiv Search MCP** provides a way to search the arXiv repository for scientific papers using a variety of filters and search parameters.
 
-## Endpoint
+## Tools
 
-### GET `/arxiv_search`
+### arxiv_search
 
 Search arXiv papers by keyword, with optional filters for specific fields, subject areas, date ranges, and pagination.
 
-## Query Parameters
+#### Parameters
 
 | Parameter    | Type    | Description                                                                                                                                          | Required | Default             |
 |--------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------|---------------------|
@@ -21,11 +21,6 @@ Search arXiv papers by keyword, with optional filters for specific fields, subje
 | `num_results`| integer | Maximum number of results to return.                                                                                                                | No       | 50                  |
 | `start`      | integer | Starting index for pagination. `0` means first page, `1` means second page, etc.                                                                     | No       | 0                   |
 
-## Response
+#### Response
 
-Under the `result` JSON key, this API returns an array of objects, each with title, abstract, authors, and URL.
-
-
----
-
-This API is ideal for researchers and developers looking to programmatically access filtered paper metadata from arXiv.
+Under the `result` JSON key, this tool returns an array of objects, each with title, abstract, authors, and URL.
